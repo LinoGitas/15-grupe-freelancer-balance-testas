@@ -1,11 +1,10 @@
 import HtmlRender from './HtmlRender.js';
 
 class DataRender {
-    constructor( selector, data, htmlSection ) {
+    constructor( selector, data) {
         this.selector = selector;
         this.container = null;
         this.data = data;
-        this.htmlSection = htmlSection;
         this.init();
     }
 
@@ -27,7 +26,7 @@ class DataRender {
         }
 
         for ( let i=0; i<this.data.length; i++ ) {
-            new HtmlRender(this.container, this.data[i],  this.htmlSection);
+            new HtmlRender(this.container, this.data[i]);
         }
     }
 }

@@ -1,8 +1,7 @@
 class HtmlRender {
-    constructor( container, data, htmlSection ) {
+    constructor( container, data) {
         this.container = container;
         this.data = data;
-        this.htmlSection = htmlSection;
         this.init();
     }
 
@@ -11,17 +10,23 @@ class HtmlRender {
     }
 
     render() {
+        let icome = '-';
+        if ( this.data.income ){
+            icome = this.data.income + ` Eur`;
+        }
+
+        let expense = '-';
+        if ( this.data.expense ){
+            expense = this.data.expense + ` Eur`;
+        }
+
         const HTML = `
-        <div class="col-2">
-            <div class="info-left">
-                <h3>${this.data.h3}</h3>
-                <p>${this.data.date}</p>
-            </div>
-            <div class="info-right ${this.data.class}"> 
-                <i class="fa fa-check"></i>             
-                <h2>${this.data.title}</h2>
-                <p>${this.data.text}</p>
-            </div>
+        <div class="table-row">
+        <div class="cell">1</div>
+        <div class="cell">${this.data.month}</div>
+        <div class="cell">${icome}</div>
+        <div class="cell">${expense} </div>
+        <div class="cell">-</div>
         </div>`;
         this.container.insertAdjacentHTML('beforeend', HTML);
     }
