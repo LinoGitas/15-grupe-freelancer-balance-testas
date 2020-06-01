@@ -35,19 +35,19 @@ class DataRender {
         const HTML2 = `
             <div class="item">
             <div id="minIncome" class="value">Mėnesio pavadinimas</div>
-            <div class="title">Liepa, Vasaris, Birzelis 'mėnuo, kai buvo mažiausiai uždirbta,bet ne lygu nuliui'</div>
+            <div class="title"><b>Liepa</b>, Vasaris, Birzelis 'mėnuo, kai buvo mažiausiai uždirbta,bet ne lygu nuliui'</div>
         </div>
         <div class="item">
             <div class="value">Mėnesio pavadinimas</div>
-            <div class="title">Rugsejis 'mėnuo, kai buvo daugiausiai uždirbta'</div>
+            <div class="title"><b>Rugpjutis</b> 'mėnuo, kai buvo daugiausiai uždirbta'</div>
         </div>
         <div class="item">
             <div class="value">Mėnesio pavadinimas</div>
-            <div class="title">Lapkritis 'mėnuo, kai buvo mažiausiai išlaidos, bet ne lygios nuliui'</div>
+            <div class="title"><b>Lapkritis</b> 'mėnuo, kai buvo mažiausiai išlaidos, bet ne lygios nuliui'</div>
         </div>
         <div class="item">
             <div class="value">Mėnesio pavadinimas</div>
-            <div class="title">Rugsejis 'mėnuo, kai buvo didžiausios išlaidos'</div>
+            <div class="title"><b>Balandis</b> 'mėnuo, kai buvo didžiausios išlaidos'</div>
         </div>`;
 
         this.container2.insertAdjacentHTML('beforeend', HTML2);

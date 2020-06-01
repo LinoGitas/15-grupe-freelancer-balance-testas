@@ -30,7 +30,7 @@ class HtmlRender {
         <div class="cell">${month[this.data.month-1]}</div>
         <div class="cell">${icome} Eur</div>
         <div class="cell">${expense} Eur</div>
-        <div class="cell">${icome+expense}</div>
+        <div class="cell">${Math.abs(icome-expense)}</div>
         </div>`;
         this.container.insertAdjacentHTML('beforeend', HTML);
     }
