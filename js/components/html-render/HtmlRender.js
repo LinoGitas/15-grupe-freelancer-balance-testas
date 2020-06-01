@@ -11,9 +11,9 @@ class HtmlRender {
     }
 
     render() {
-        let icome = 0;
+        let income = 0;
         if ( this.data.income ){
-            icome = this.data.income;
+            income = this.data.income;
         }
 
         let expense = 0;
@@ -28,9 +28,9 @@ class HtmlRender {
         <div class="table-row">
         <div class="cell">${this.cnt+1}</div>
         <div class="cell">${month[this.data.month-1]}</div>
-        <div class="cell">${icome} Eur</div>
+        <div class="cell">${income} Eur</div>
         <div class="cell">${expense} Eur</div>
-        <div class="cell">${Math.abs(icome-expense)}</div>
+        <div class="cell">${Math.abs(income-expense)} Eur</div>
         </div>`;
         this.container.insertAdjacentHTML('beforeend', HTML);
     }
