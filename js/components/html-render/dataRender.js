@@ -26,7 +26,7 @@ class DataRender {
         }
 
         for ( let i=0; i<this.data.length; i++ ) {
-            new HtmlRender(this.container, this.data[i]);
+            new HtmlRender(this.container, this.data[i], i);
         }
     }
 }

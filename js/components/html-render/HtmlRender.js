@@ -1,7 +1,8 @@
 class HtmlRender {
-    constructor( container, data) {
+    constructor( container, data, cnt) {
         this.container = container;
         this.data = data;
+        this.cnt = cnt;
         this.init();
     }
 
@@ -20,10 +21,13 @@ class HtmlRender {
             expense = this.data.expense + ` Eur`;
         }
 
+        let month = ['Sausis', 'Vasaris', 'Kovas', 'Balandis', 'Geguzis', 
+        'Birzelis', 'Liepa', 'Rugpjutis', 'Rugsejis', 'Spalis', 'Lapkritis', 'Groudis'];
+
         const HTML = `
         <div class="table-row">
-        <div class="cell">1</div>
-        <div class="cell">${this.data.month}</div>
+        <div class="cell">${this.cnt+1}</div>
+        <div class="cell">${month[this.data.month-1]}</div>
         <div class="cell">${icome}</div>
         <div class="cell">${expense} </div>
         <div class="cell">-</div>
