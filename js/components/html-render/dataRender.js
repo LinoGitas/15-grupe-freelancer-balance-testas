@@ -100,11 +100,11 @@ class DataRender {
             </div>
             <div class="item">
                 <div class="value">Mėnesio pavadinimas</div>
-                <div class="title"><b>${minExpenseMonth}</b> 'mėnuo, kai buvo mažiausiai išlaidos, bet ne lygios nuliui'</div>
+                <div class="title"><b>${minExpenseMonth}</b> <div>
             </div>
             <div class="item">
                 <div class="value">Mėnesio pavadinimas</div>
-                <div class="title"><b>${maxExpenseMonth}</b> 'mėnuo, kai buvo didžiausios išlaidos'</div>
+                <div class="title"><b>${maxExpenseMonth}</b> </div>
             </div>`;
 
         this.container2.insertAdjacentHTML('beforeend', HTML2);
